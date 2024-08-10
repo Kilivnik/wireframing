@@ -1,13 +1,46 @@
-body {
-    background-color: #FFFFFF;
-}
-/* 
-main text color #000000
-secondary text color rgba(0, 0, 0, 0.8)
-white color #FFFFFF
-action color #18A0FB
-
- */
 :root {
-    
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: #000000;
+    --accent-color:#18A0FB;
+    --primary-white-color: #FFFFFF;
 }
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: Montserrat, sans-serif;
+    letter-spacing: -0.015em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/*  #region Logo */
+.logo {
+    color: var(--title-text-color);
+    font-family: Comfortaa, sans-serif;
+
+    font-size: 28px;
+    line-height: 1.14;
+}
+
+.logo:hover {
+    color: var(--accent-color);
+}
+/*  #endregion */
+
+/*  #region Nav */
+.site-nav .link {
+    color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--title-text-color);
+}
+/*  #end region */

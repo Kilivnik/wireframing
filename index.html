@@ -6,26 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Our Style -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="">
-                <img src="./images/logo.svg" alt="logo">
+            <a href="/index.html" class="logo">
+                <img src="./images/logo.svg" alt="Company logo">
                 photo
             </a>
 
-            <ul>
-                <li><a href="">Features</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="./wireframes.html">Wireframes</a></li>
+            <ul class="site-nav list">
+                <li><a href="" class="link">Features</a></li>
+                <li><a href="" class="link">Pricing</a></li>
+                <li><a href="" class="link">Community</a></li>
+                <li><a href="" class="link">Support</a></li>
+                <li><a href="./wireframes.html" class="link">Wireframes</a></li>
             </ul>
 
-            <ul>
+            <ul class="auth-nav list">
                 <li><a href="">Log in</a></li>
                 <li><a href="">Register</a></li>
             </ul>
@@ -190,9 +201,9 @@
             </li>
         </ul>
 
-        /* aria-lebel використовуєм коли є посилання-іконка на соц мережі,
+        <!-- aria-lebel використовуєм коли є посилання-іконка на соц мережі,
         але не має напису яка це мережа, тобто читалка бачить текст але ми не бачимо його на сайті
-        Робимо іконку без тексту*/
+        Робимо іконку без тексту -->
         <ul>
             <li>
                 <a href="" aria-label="Facebook" link></a>
