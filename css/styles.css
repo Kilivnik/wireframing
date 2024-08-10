@@ -43,4 +43,49 @@ body {
 .site-nav .link:focus {
     color: var(--title-text-color);
 }
-/*  #end region */
+/*  #endregion */
+
+/*  #region Hero */
+.hero-title {
+    color: var(--title-text-color);
+}
+/*  #endregion */
+
+/*  #region Переваги */
+.section-title {
+    color: var(--title-text-color);
+}
+
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+.feature-list .link {
+    color: var(--accent-color);
+}
+
+/*  #endregion */
+
+/*  Button */
+
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+
+    font-size: 24px;
+    padding: 12px 24px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.button.primary {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    border-color: transparent;
+}
+
+.button.secondary {
+    background-color: var(--primary-white-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
