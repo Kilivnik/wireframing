@@ -21,6 +21,17 @@ body {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 2px solid tomato;
 }
 
 /*  #region Logo */
@@ -30,6 +41,7 @@ body {
 
     font-size: 28px;
     line-height: 1.14;
+    outline: 1px solid green;
 }
 
 .logo:hover {
@@ -38,9 +50,30 @@ body {
 /*  #endregion */
 
 /*  #region Nav */
-.site-nav .link {
-    color: var(--accent-color);
+.site-nav {
+    display: flex;
+    outline: 1px solid green;
+}
 
+/* .site-nav .item {
+    background-color: #18A0FB;
+} */
+
+.site-nav .item + .item { 
+    /* прибираємо крайню геометрію аналог коду нижче */
+    margin-left: 40px;
+}
+
+/* .site-nav .item:last-child {
+    margin-right: 40px;
+} */
+
+.site-nav .link {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    color: var(--accent-color);
     font-size: 15px;
     font-weight: 500;
     line-height: 1.2;
@@ -50,16 +83,33 @@ body {
 .site-nav .link:focus {
     color: var(--title-text-color);
 }
+
+.auth-nav {
+    display: flex;
+    outline: 1px solid green;
+}
+
+.auth-nav .item + .item {
+    margin-left: 12px;
+}
+
+
 /*  #endregion */
 
 /*  #region Hero */
+.hero {
+    text-align: center;
+}
+
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+
     color: var(--title-text-color);
 
     font-weight: 400;
     font-size: 56px;
     line-height: 1.42;
-    text-align: center;
 }
 /*  #endregion */
 
@@ -97,23 +147,27 @@ body {
 
 /* #region Button */
 .button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 12px 24px;
+    min-width: 130px;
+    
+
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
 
-     font-weight: 500;
-     font-size: 15px;
-     line-height: 1.2;
-
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
     font-size: 24px;
-    padding: 12px 24px;
-    display: inline-block;
-    border: 1px solid black;
+    text-align: center;
 }
 
 .button.primary {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
-    border-color: transparent;
+    
 }
 
 .button.secondary {
