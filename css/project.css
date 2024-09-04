@@ -112,6 +112,7 @@ main {
 } */
 
 .hero__title {
+    display: block;
     text-align: center; 
 
     font-weight: 500;
